@@ -1,7 +1,3 @@
-https://stackoverflow.com/questions/4542892/possible-interview-question-how-to-find-all-overlapping-intervals#4542928 => provide us a solution to find all the overlapping intervals. On top of this problem, imagine each interval has a weight. I am aiming to find those overlap intervals summed weight, when a new interval is inserted. 
-
-Condition: Newly inserted interval's end value is always larger than the previously inserted interval's end point, this will lead us to have already sorted end points.
-
 When a new interval and its weight is inserted, all the overlapped intervals summed weight should be checked that does it exceeds the limit or not. For example when we insert `[15, 70] 2`, `[15, 20]` 's summed weight will be 130 and it should give an error since it exceed the limit=128, if not the newly inserted interval will be append to the list.
 
     int limit = 128;
